@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
-import { ArrowDown, Github, Mail } from "lucide-react";
+import { ArrowDown, Github, Mail,Linkedin } from "lucide-react";
 import { content } from "@/content/portfolio";
 import profile from "../../assets/hero.jpg"
 import { TechOrbit } from "./tech";
@@ -137,6 +137,15 @@ export function Hero() {
             >
               <Github className="h-4 w-4" />
               GitHub
+            </a>
+            <a
+              href={content.linkedin.url}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-teal hover:text-teal"
+            >
+              <Linkedin className="h-4 w-4" />
+              Linked In
             </a>
           </motion.div>
         </div>

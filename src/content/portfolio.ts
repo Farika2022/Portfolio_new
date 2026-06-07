@@ -72,6 +72,7 @@ deploy(buildExperience("portfolio"));`,
     },
     secondaryLinks: [
       { label: "GitHub", href: "https://github.com/Farika2022" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/farika-m-farook-7b57b0311/" },
       { label: "View work", href: "#projects" },
     ],
   },
@@ -163,7 +164,7 @@ deploy(buildExperience("portfolio"));`,
     {
       role: "Student Coordinator (Student Assistant)",
       org: "Aalborg University — Computer Science Dept.",
-      period: "Oct 2024 — Present",
+      period: "Oct 2024 — June 2026",
       points: [
         "Own project plans, timelines, and coordination across concurrent engagements for 50+ international participants.",
         "Run regular status check-ins and alignment sessions with stakeholders across three groups.",
@@ -246,11 +247,11 @@ deploy(buildExperience("portfolio"));`,
     email: "farikamagjabeen2022@gmail.com",
     links: [
       { label: "GitHub", href: "https://github.com/Farika2022" },
-      { label: "LinkedIn", href: "https://www.linkedin.com/in/farika-m-farook" },
-      {
-        label: "Overseas Voyagers",
-        href: "https://overseas-voyages.vercel.app/",
-      },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/farika-m-farook-7b57b0311/" },
+     // {
+     //   label: "Overseas Voyagers",
+     //   href: "https://overseas-voyages.vercel.app/",
+   //   },
     ],
   },
 
@@ -258,6 +259,10 @@ deploy(buildExperience("portfolio"));`,
   github: {
     username: "Farika2022",
     url: "https://github.com/Farika2022",
+  },
+  linkedin: {
+    username: "Farika Farook",
+    url: "https://www.linkedin.com/in/farika-m-farook-7b57b0311/",
   },
 
   footer: {
