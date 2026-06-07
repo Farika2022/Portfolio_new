@@ -115,14 +115,13 @@ export function Hero() {
           >
             {hero.subline}
           </motion.p>
-
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.75, duration: 0.5 }}
             className="mt-8 flex flex-wrap items-center gap-4"
           >
-            <a
+           <a
               href={hero.primaryCta.href}
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-coral px-6 py-3 text-sm font-semibold text-coral-foreground transition-transform hover:scale-[1.03]"
             >
@@ -130,6 +129,14 @@ export function Hero() {
               <Mail className="h-4 w-4" />
               {hero.primaryCta.label}
             </a>
+            </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.75, duration: 0.5 }}
+            className="mt-8 flex flex-wrap items-center gap-4"
+          >
+            
             <a
               href={content.github.url}
               target="_blank"
@@ -171,7 +178,6 @@ export function Hero() {
           </pre>
         </motion.div>*/}
         {/* RIGHT SIDE (CHARACTER AREA) */}
-
  
   <TechOrbit/>
  
