@@ -78,7 +78,8 @@ export function Hero() {
         style={{ background: "var(--coral)" }}
       />
       <div className="mx-auto grid w-full max-w-5xl gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-        <div>
+       
+           <div className="min-w-0">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -96,8 +97,8 @@ export function Hero() {
             </span>
           </p>
 
-          <h1 className="text-balance text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl">
-            {typed}
+          <h1 className="text-balance break-words text-3xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl">
+                        {typed}
             <span
               className={`ml-1 inline-block w-[3px] translate-y-1 bg-coral align-middle ${
                 done ? "animate-pulse" : ""

@@ -268,7 +268,7 @@ deploy(buildExperience("portfolio"));`,
   footer: {
     // Footer terminal easter egg — types out: $ whoami → <answer>
     whoami: "farika",
-    note: "Built with React, TanStack Start & Motion.",
+    note: "",
   },
 };
 
