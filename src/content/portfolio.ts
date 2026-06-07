@@ -1,0 +1,270 @@
+// ============================================================================
+// EDIT ME — this is the single source of truth for all portfolio content.
+// Change text, links, projects, skills, etc. here. To add a future project,
+// just append an object to the `projects` array. To add your photo, set
+// `about.photo` to an imported image path (or keep null for the placeholder).
+// ============================================================================
+import profile from "../assets/profile.jpeg" 
+import weatherapp from "../assets/weather_app.mp4"
+import e_commerce from "../assets/E-commerce.mp4"
+
+
+export type ProjectMedia = {
+  type: "image" | "video";
+  src: string;
+};
+export type Project = {
+  title: string;
+  description: string;
+  tags: string[];
+  media?: ProjectMedia[];
+  link?: string;
+  repo?: string;
+  featured?: boolean;
+};
+
+export type SkillGroup = {
+  category: string;
+  skills: { name: string; level: 1 | 2 | 3 }[]; // 1 = learning, 2 = solid, 3 = strong
+};
+
+export type ExperienceItem = {
+  role: string;
+  org: string;
+  period: string;
+  points: string[];
+};
+
+export type EducationItem = {
+  degree: string;
+  school: string;
+  period: string;
+  detail?: string;
+};
+
+export const content = {
+  meta: {
+    name: "Farika Farook",
+    title: "Farika Farook — Software Developer & Frontend Engineer",
+    description:
+      "MSc Computer Science (IT) at Aalborg University. Client-focused software developer building fast, thoughtful web experiences with React & TypeScript. Graduating June 2026.",
+  },
+
+  hero: {
+    name: "Farika Farook",
+    headline: "I build interfaces that think and feel.",
+    subline:
+      "MSc Computer Science (IT) · Aalborg University. Client-focused software developer turning complex ideas into fast, accessible, delightful web experiences. Graduating June 2026 and open to roles.",
+    // The decorative code snippet shown in the hero (your real code).
+    codeSnippet: `function buildExperience(idea) {
+  const ui = design(idea, { warmth: true });
+  return ui
+    .accessible()
+    .fast()
+    .delightful();
+}
+
+// ship it →
+deploy(buildExperience("portfolio"));`,
+    primaryCta: {
+      label: "Get in touch",
+      href: "mailto:farikamagjabeen2022@gmail.com",
+    },
+    secondaryLinks: [
+      { label: "GitHub", href: "https://github.com/Farika2022" },
+      { label: "View work", href: "#projects" },
+    ],
+  },
+
+  projects: [
+    {
+      title: "Overseas Voyagers",
+      description:
+        "A polished travel platform with rich itinerary browsing and a fast, responsive interface. Built and shipped end to end as a software developer, owning timelines and acting as the day-to-day point of contact for B2B clients.",
+      tags: ["React", "JavaScript", "CSS", "HTML"],
+      link: "https://overseas-voyages.vercel.app/",
+      repo: "https://github.com/Farika2022",
+      featured: true,
+    },
+    {
+      title: "Generative AI for Public Space Redesign",
+      description:
+        "Multidisciplinary research project at Aalborg University coordinating researchers, designers, and developers. Exploring generative AI to reimagine public spaces, while running planning sessions and tracking milestones across parallel workstreams.",
+      tags: ["Python", "Generative AI", "Machine Learning", "React"],
+      repo: "https://github.com/Farika2022",
+    },
+    {
+      title: "Help the Botanist",
+      description:
+        "A machine-learning project at Aalborg University's Computer Science department. Owned end-to-end coordination from scoping through launch, maintaining quality, timelines, and documentation throughout.",
+      tags: ["Python", "Machine Learning", "Flask"],
+      repo: "https://github.com/Farika2022",
+    },
+    {
+      title: "Weather App",
+      description:
+        "I created a simple Weather App. It display the real-time temperature, wind and humidity of the selected city.",
+      tags: ["HTML", "CSS"] ,
+      repo: "https://github.com/Farika2022/HTML-CSS/tree/main/HTML%26CSS_%20Projects/Weather_App",
+       media: [
+    {
+      type: "video",
+      src: weatherapp,
+    },
+    
+  ]
+    },
+     {
+      title: "E-commerce website ",
+      description:
+        "I created a simple e-commerce website for dress. And I also included simple cart and payment pages to it.",
+      tags: ["HTML", "CSS"],
+      repo: "https://github.com/Farika2022/HTML-CSS/tree/main/HTML%26CSS_%20Projects/E-commerce",
+       media: [
+    {
+      type: "video",
+      src: e_commerce,
+    },
+  ]
+    },
+  ] as Project[],
+
+  skills: [
+    {
+      category: "Frontend",
+      skills: [
+        { name: "HTML & CSS", level: 3 },
+        { name: "React & TypeScript", level: 2 },
+        { name: "JavaScript & PHP", level: 2 },
+        { name: "UI / UX Design", level: 2 },
+      ],
+    },
+    {
+      category: "Engineering",
+      skills: [
+        { name: "SQL & MySQL", level: 2 },
+        { name: "REST API", level: 2 },
+        { name: "Git", level: 3 },
+        { name: "Agile Development", level: 3 },
+      ],
+    },
+    {
+      category: "Foundations",
+      skills: [
+        { name: "Python", level: 2 },
+        { name: "Machine Learning & Generative AI", level: 2 },
+        { name: "Excel & CRM", level: 2 },
+        { name: "Data Structures & Algorithms", level: 2 },
+      ],
+    },
+  ] as SkillGroup[],
+
+  experience: [
+    {
+      role: "Student Coordinator (Student Assistant)",
+      org: "Aalborg University — Computer Science Dept.",
+      period: "Oct 2024 — Present",
+      points: [
+        "Own project plans, timelines, and coordination across concurrent engagements for 50+ international participants.",
+        "Run regular status check-ins and alignment sessions with stakeholders across three groups.",
+        "Maintain clear documentation of decisions, scope, risks, and dependencies across all active cases.",
+        "Introduced templates and standardised workflows that made the whole team faster and more consistent.",
+      ],
+    },
+    {
+      role: "Software Developer",
+      org: "Overseas Voyagers",
+      period: "Feb 2026 — May 2026",
+      points: [
+        "Own project timelines and delivery coordination across multiple active client engagements in parallel.",
+        "Act as day-to-day point of contact for B2B clients on status, scope, and deliverables.",
+        "Coordinate across internal teams to prioritise, scope, and deliver work on time.",
+        "Use AI tools actively to improve workflow, from documentation to optimisation.",
+      ],
+    },
+    {
+      role: "Front-End Developer Intern",
+      org: "Side Stream · Copenhagen",
+      period: "Sep 2025 — Nov 2025",
+      points: [
+        "Coordinated delivery of 4 production features across developers and designers within a sprint.",
+        "Diagnosed and resolved complex integration issues, contributing to a 15% performance improvement.",
+        "Maintained documentation of decisions, dependencies, and risks throughout the lifecycle.",
+        "Collaborated across technical and non-technical stakeholders, adapting communication to each audience.",
+      ],
+    },
+    {
+      role: "Tech Consultant Intern",
+      org: "Fendous Sustainable Solution · Aalborg",
+      period: "Jun 2025 — Aug 2025",
+      points: [
+        "Coordinated sprint cycles across developers and designers, ensuring on-time delivery.",
+        "Acted as a key point of contact for the client on status, scope changes, and deliverables.",
+        "Ran sprint planning and retrospectives, keeping internal teams and client expectations aligned.",
+        "Ensured smooth handovers between discovery, build, and launch phases.",
+      ],
+    },
+  ] as ExperienceItem[],
+
+  about: {
+    // Set to an imported image URL to show your photo. Leave null for placeholder.
+    photo: profile,
+    heading: "About me",
+    paragraphs: [
+      "I'm Farika — a client-focused software developer and Computer Science (IT) student at Aalborg University, graduating in June 2026. I thrive at the intersection of technology and customer success.",
+      "I bring hands-on experience delivering web technologies in real client environments, managing projects end-to-end, and ensuring every solution creates measurable value. I'm natural at building trusted client relationships, adapting quickly to new platforms, and communicating clearly across technical and non-technical stakeholders.",
+      "Currently open to software / frontend engineering roles. If you're hiring, let's talk.",
+    ],
+  },
+
+  education: [
+    {
+      degree: "MSc Computer Science (IT)",
+      school: "Aalborg University, Denmark",
+      period: "Jun 2024 — Jun 2026",
+      detail:
+        "Specializing in software development, machine intelligence, and human-computer interaction (HCI).",
+    },
+    {
+      degree: "MSc Computer Science",
+      school: "Mother Teresa University, India",
+      period: "Jun 2019 — Apr 2021",
+      detail: "CGPA 8.5/10 — First Class with Distinction.",
+    },
+    {
+      degree: "BSc Computer Science",
+      school: "Bharathidasan University, India",
+      period: "Jun 2015 — Apr 2018",
+      detail: "CGPA 7.5/10 — First Class.",
+    },
+  ] as EducationItem[],
+
+  contact: {
+    heading: "Let's build something.",
+    blurb:
+      "Reach me out through.",
+    email: "farikamagjabeen2022@gmail.com",
+    links: [
+      { label: "GitHub", href: "https://github.com/Farika2022" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/farika-m-farook" },
+      {
+        label: "Overseas Voyagers",
+        href: "https://overseas-voyages.vercel.app/",
+      },
+    ],
+  },
+
+  // GitHub username for the contribution-graph strip + links.
+  github: {
+    username: "Farika2022",
+    url: "https://github.com/Farika2022",
+  },
+
+  footer: {
+    // Footer terminal easter egg — types out: $ whoami → <answer>
+    whoami: "farika",
+    note: "Built with React, TanStack Start & Motion.",
+  },
+};
+
+export type Content = typeof content;
