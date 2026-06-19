@@ -84,7 +84,7 @@ deploy(buildExperience("portfolio"));`,
         "A polished travel platform with rich itinerary browsing and a fast, responsive interface. Built and shipped end to end as a software developer, owning timelines and acting as the day-to-day point of contact for B2B clients.",
       tags: ["React", "JavaScript", "CSS", "HTML"],
       link: "https://overseas-voyages.vercel.app/",
-      repo: "https://github.com/Farika2022",
+      repo: "https://github.com/Farika2022/overseas-voyages",
       featured: true,
     },
     {
@@ -92,14 +92,14 @@ deploy(buildExperience("portfolio"));`,
       description:
         "Multidisciplinary research project at Aalborg University coordinating researchers, designers, and developers. Exploring generative AI to reimagine public spaces, while running planning sessions and tracking milestones across parallel workstreams.",
       tags: ["Python", "Generative AI", "Machine Learning", "React"],
-      repo: "https://github.com/Farika2022",
+      repo: "https://github.com/Farika2022/optimizinginput",
     },
     {
       title: "Help the Botanist",
       description:
         "A machine-learning project at Aalborg University's Computer Science department. Owned end-to-end coordination from scoping through launch, maintaining quality, timelines, and documentation throughout.",
       tags: ["Python", "Machine Learning", "Flask"],
-      repo: "https://github.com/Farika2022",
+      repo: "https://github.com/Farika2022/Help-the-botanist",
     },
     {
       title: "Weather App",
