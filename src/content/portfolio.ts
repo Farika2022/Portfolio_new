@@ -167,8 +167,8 @@ deploy(buildExperience("portfolio"));`,
       org: "Overseas Voyagers",
       period: "Feb 2026 — present",
       points: [
-        "• Own frontend delivery on a live B2B platform serving 100+ international clients across multiple markets, applying component-based architecture, responsive UI, and REST API integration.",
-        "• Act as day-to-day client contact and translate business needs into shipped features, using AI tools including Claude Code, GitHub Copilot, and Lovable as core working method.",
+        " Own frontend delivery on a live B2B platform serving 100+ international clients across multiple markets, applying component-based architecture, responsive UI, and REST API integration.",
+        " Act as day-to-day client contact and translate business needs into shipped features, using AI tools including Claude Code, GitHub Copilot, and Lovable as core working method.",
               ],
     },
     {
@@ -176,24 +176,24 @@ deploy(buildExperience("portfolio"));`,
       org: "Side Stream · Copenhagen",
       period: "Sep 2025 — Nov 2025",
       points: [
-       "• Delivered a functional end-to-end frontend for a two-sided B2B marketplace supporting early launch with 5+ initial sellers and buyers, covering role-based signup, seller submission with admin review, product listing, buyer search, quantity and stock updates, and payment flow.",
-       "• Applied component-based architecture (Header, Sidebar, Navbar, product cards), responsive design, and hooks including useMemo and useNavigate, integrated with a PostgreSQL backend and resolved integration issues through structured debugging, pull request reviews, and pair discussion with the team."   ],
+       "Delivered a functional end-to-end frontend for a two-sided B2B marketplace supporting early launch with 5+ initial sellers and buyers, covering role-based signup, seller submission with admin review, product listing, buyer search, quantity and stock updates, and payment flow.",
+       "Applied component-based architecture (Header, Sidebar, Navbar, product cards), responsive design, and hooks including useMemo and useNavigate, integrated with a PostgreSQL backend and resolved integration issues through structured debugging, pull request reviews, and pair discussion with the team."   ],
     },
     {
       role: "Tech Consultant Intern",
       org: "Fendous Sustainable Solution · Aalborg",
       period: "Jun 2025 — Aug 2025",
       points: [
-        "• Built and maintained sections of the Fendous.DK website in Danish and English (Help page, e-meet section, Copilot section) and created end-user tutorials through Storylane.",
-        "• Contributed to Fendous PLS (Private Learning Space) by researching and prototyping secure inclusion of external participants in Jitsi Meet-based online meetings, applying JavaScript for meeting security features."     ],
+        "Built and maintained sections of the Fendous.DK website in Danish and English (Help page, e-meet section, Copilot section) and created end-user tutorials through Storylane.",
+        "Contributed to Fendous PLS (Private Learning Space) by researching and prototyping secure inclusion of external participants in Jitsi Meet-based online meetings, applying JavaScript for meeting security features."     ],
     },
     {
       role: "Student Coordinator (Student Assistant)",
       org: "Aalborg University — Computer Science Dept.",
       period: "Oct 2024 — present",
       points: [
-         "• Communicate technical concepts clearly across international students, faculty, and administration",
-         "• Reduced repeated queries by around 30% for 50+ international students through structured guidance and documentation"  
+         "Communicate technical concepts clearly across international students, faculty, and administration",
+         "Reduced repeated queries by around 30% for 50+ international students through structured guidance and documentation"  
       ],
     },
   ] as ExperienceItem[],
