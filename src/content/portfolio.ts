@@ -161,49 +161,39 @@ deploy(buildExperience("portfolio"));`,
   ] as SkillGroup[],
 
   experience: [
-    {
-      role: "Student Coordinator (Student Assistant)",
-      org: "Aalborg University — Computer Science Dept.",
-      period: "Oct 2024 — June 2026",
-      points: [
-        "Build and ship fullstack features end-to-end for live B2B applications used by real customers everyday",
-        "Run regular status check-ins and alignment sessions with stakeholders across three groups.",
-        "Maintain clear documentation of decisions, scope, risks, and dependencies across all active cases.",
-        "Maintain high code quality across frontend and backend integrations in a fast-moving environment",
-      ],
-    },
+    
     {
       role: "Software Developer",
       org: "Overseas Voyagers",
-      period: "Feb 2026 — May 2026",
+      period: "Feb 2026 — present",
       points: [
-        "Own project timelines and delivery coordination across multiple active client engagements in parallel.",
-        "Act as day-to-day point of contact for B2B clients on status, scope, and deliverables.",
-        "Coordinate across internal teams to prioritise, scope, and deliver work on time.",
-        "Use AI tools actively to improve workflow, from documentation to optimisation.",
-      ],
+        "• Own frontend delivery on a live B2B platform serving 100+ international clients across multiple markets, applying component-based architecture, responsive UI, and REST API integration.",
+        "• Act as day-to-day client contact and translate business needs into shipped features, using AI tools including Claude Code, GitHub Copilot, and Lovable as core working method.",
+              ],
     },
     {
       role: "Front-End Developer Intern",
       org: "Side Stream · Copenhagen",
       period: "Sep 2025 — Nov 2025",
       points: [
-        "Coordinated delivery of 4 production features across developers and designers within a sprint.",
-        "Integrated MySQL database with frontend via REST API, building the full data flow from user input through backend processing to dynamic rendering",
-        "Diagnosed and resolved complex integration issues, contributing to a 15% performance improvement.",
-        "Maintained documentation of decisions, dependencies, and risks throughout the lifecycle.",
-        "Collaborated across technical and non-technical stakeholders, adapting communication to each audience.",
-      ],
+       "• Delivered a functional end-to-end frontend for a two-sided B2B marketplace supporting early launch with 5+ initial sellers and buyers, covering role-based signup, seller submission with admin review, product listing, buyer search, quantity and stock updates, and payment flow.",
+       "• Applied component-based architecture (Header, Sidebar, Navbar, product cards), responsive design, and hooks including useMemo and useNavigate, integrated with a PostgreSQL backend and resolved integration issues through structured debugging, pull request reviews, and pair discussion with the team."   ],
     },
     {
       role: "Tech Consultant Intern",
       org: "Fendous Sustainable Solution · Aalborg",
       period: "Jun 2025 — Aug 2025",
       points: [
-        "Coordinated sprint cycles across developers and designers, ensuring on-time delivery.",
-        "Acted as a key point of contact for the client on status, scope changes, and deliverables.",
-        "Ran sprint planning and retrospectives, keeping internal teams and client expectations aligned.",
-        "Ensured smooth handovers between discovery, build, and launch phases.",
+        "• Built and maintained sections of the Fendous.DK website in Danish and English (Help page, e-meet section, Copilot section) and created end-user tutorials through Storylane.",
+        "• Contributed to Fendous PLS (Private Learning Space) by researching and prototyping secure inclusion of external participants in Jitsi Meet-based online meetings, applying JavaScript for meeting security features."     ],
+    },
+    {
+      role: "Student Coordinator (Student Assistant)",
+      org: "Aalborg University — Computer Science Dept.",
+      period: "Oct 2024 — present",
+      points: [
+         "• Communicate technical concepts clearly across international students, faculty, and administration",
+         "• Reduced repeated queries by around 30% for 50+ international students through structured guidance and documentation"  
       ],
     },
   ] as ExperienceItem[],
