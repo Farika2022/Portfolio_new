@@ -83,7 +83,7 @@ deploy(buildExperience("portfolio"));`,
       description:
         "AI-powered customer support platform with a React TypeScript customer portal, .NET 8 C# REST API, PostgreSQL database, and JWT authentication. Staff dashboard with real-time filtering, sorting, and search. Python AI triage service using the Anthropic Claude API to automatically classify ticket urgency and generate reply suggestions.",
       tags: ["React", "TypeScript", "C#", ".NET", "PostgreSQL", "Python", "Claude API", "JWT", "Storybook"],
-      link: "https://smartdesk-ppxfvz7jm-farika2022s-projects.vercel.app/",
+      link: "https://smartdesk-beta.vercel.app",
       repo: "https://github.com/Farika2022/smartdesk",
       featured: true,
     },
