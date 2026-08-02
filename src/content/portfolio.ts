@@ -78,8 +78,17 @@ deploy(buildExperience("portfolio"));`,
   },
 
   projects: [
+     {
+      title: "SmartDesk",
+      description:
+        "AI-powered customer support platform with a React TypeScript customer portal, .NET 8 C# REST API, PostgreSQL database, and JWT authentication. Staff dashboard with real-time filtering, sorting, and search. Python AI triage service using the Anthropic Claude API to automatically classify ticket urgency and generate reply suggestions.",
+      tags: ["React", "TypeScript", "C#", ".NET", "PostgreSQL", "Python", "Claude API", "JWT", "Storybook"],
+      link: "https://smartdesk-ef70sobl7-farika2022s-projects.vercel.app/",
+      repo: "https://github.com/Farika2022/smartdesk",
+      featured: true,
+    },
     {
-      title: "Overseas Voyagers",
+      title: "Overseas Voyages",
       description:
         "A polished travel platform with rich itinerary browsing and a fast, responsive interface. Built and shipped end to end as a software developer, owning timelines and acting as the day-to-day point of contact for B2B clients.",
       tags: ["React", "JavaScript", "CSS", "HTML"],
