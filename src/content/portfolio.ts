@@ -47,14 +47,14 @@ export const content = {
     name: "Farika Farook",
     title: "Farika Farook — Software Developer & Frontend Engineer",
     description:
-      "MSc Computer Science (IT) at Aalborg University. Client-focused software developer building fast, thoughtful web experiences with React & TypeScript. Graduating June 2026.",
+      "MSc Computer Science graduate from Aalborg University. Software developer building AI-powered, user-focused web experiences with React, TypeScript, Python, and C#/.NET. Graduated August 2026.",
   },
 
   hero: {
     name: "Farika Farook",
     headline: "I build interfaces that think and feel.",
     subline:
-      "MSc Computer Science (IT) · Aalborg University. Client-focused software developer turning complex ideas into fast, accessible, delightful web experiences. Graduating June 2026 and open to roles.",
+      "MSc Computer Science · Aalborg University. Software developer combining frontend engineering, AI, and Human-Computer Interaction to build thoughtful, user-focused digital experiences.",
     // The decorative code snippet shown in the hero (your real code).
     codeSnippet: `function buildExperience(idea) {
   const ui = design(idea, { warmth: true });
