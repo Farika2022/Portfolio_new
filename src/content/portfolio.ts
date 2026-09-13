@@ -81,7 +81,7 @@ deploy(buildExperience("portfolio"));`,
      {
       title: "SmartDesk",
       description:
-        "Full-stack support-ticketing platform (React/TypeScript, ASP.NET Core, PostgreSQL) with real-time AI-based ticket triage via LLM integration, independently deployed across Vercel, Render, and Neon.",
+        "Full-stack support-ticketing platform with real-time AI-based ticket triage via LLM integration, independently deployed across Vercel, Render, and Neon.",
       tags: ["React", "TypeScript", "ASP.NET Core", "PostgreSQL", "Docker"],
       link: "https://smartdisk.vercel.app/",
       repo: "https://github.com/Farika2022/AI-Projects/tree/main/SmartDisk%20app/smartdisk",
@@ -186,7 +186,7 @@ deploy(buildExperience("portfolio"));`,
     {
       role: "Software Developer",
       org: "Overseas Voyagers",
-      period: "Feb 2026 — present",
+      period: "Feb 2026 — August 2026",
       points: [
         " Own frontend delivery on a live B2B platform serving 100+ international clients across multiple markets, applying component-based architecture, responsive UI, and REST API integration.",
         " Act as day-to-day client contact and translate business needs into shipped features, using AI tools including Claude Code, GitHub Copilot, and Lovable as core working method.",
@@ -211,7 +211,7 @@ deploy(buildExperience("portfolio"));`,
     {
       role: "Student Coordinator (Student Assistant)",
       org: "Aalborg University — Computer Science Dept.",
-      period: "Oct 2024 — present",
+      period: "Oct 2024 — August 2026",
       points: [
          "Communicate technical concepts clearly across international students, faculty, and administration",
          "Reduced repeated queries by around 30% for 50+ international students through structured guidance and documentation"  
@@ -224,9 +224,12 @@ deploy(buildExperience("portfolio"));`,
     photo: profile,
     heading: "About me",
     paragraphs: [
-      "I'm Farika — a client-focused software developer and Computer Science (IT) student at Aalborg University, graduating in June 2026. I thrive at the intersection of technology and customer success.",
-      "I bring hands-on experience delivering web technologies in real client environments, managing projects end-to-end, and ensuring every solution creates measurable value. I'm natural at building trusted client relationships, adapting quickly to new platforms, and communicating clearly across technical and non-technical stakeholders.",
-      "Currently open to software / frontend engineering roles. If you're hiring, let's talk.",
+      "I'm Farika — a software developer and MSc Computer Science graduate from Aalborg University. I enjoy building digital products where technology, AI, and user experience come together.",
+
+     "I like taking an idea from understanding the problem and exploring solutions to designing, building, and refining the final experience. My background spans React, TypeScript, Python, C#/.NET, AI-powered applications, and Human-Computer Interaction.",
+
+     "I'm currently open to software development and frontend engineering opportunities. If you're working on something interesting, let's talk."
+,
     ],
   },
 
@@ -234,7 +237,7 @@ deploy(buildExperience("portfolio"));`,
     {
       degree: "MSc Computer Science (IT)",
       school: "Aalborg University, Denmark",
-      period: "Jun 2024 — Jun 2026",
+      period: "Jun 2024 — Aug 2026",
       detail:
         "Specializing in software development, machine intelligence, and human-computer interaction (HCI).",
     },
