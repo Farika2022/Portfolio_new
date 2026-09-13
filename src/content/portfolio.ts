@@ -140,34 +140,46 @@ deploy(buildExperience("portfolio"));`,
   ] as Project[],
 
   skills: [
-    {
-      category: "Frontend",
-      skills: [
-        { name: "HTML & CSS", level: 3 },
-        { name: "React & TypeScript", level: 2 },
-        { name: "JavaScript & PHP", level: 2 },
-        { name: "UI / UX Design", level: 2 },
-      ],
-    },
-    {
-      category: "Engineering",
-      skills: [
-        { name: "SQL & MySQL", level: 2 },
-        { name: "REST API", level: 2 },
-        { name: "Git", level: 3 },
-        { name: "Agile Development", level: 3 },
-      ],
-    },
-    {
-      category: "Foundations",
-      skills: [
-        { name: "Python", level: 2 },
-        { name: "Machine Learning & Generative AI", level: 2 },
-        { name: "Excel & CRM", level: 2 },
-        { name: "Data Structures & Algorithms", level: 2 },
-      ],
-    },
-  ] as SkillGroup[],
+  {
+    category: "Frontend",
+    skills: [
+      { name: "React & TypeScript", level: 3 },
+      { name: "JavaScript", level: 3 },
+      { name: "HTML & CSS", level: 3 },
+      { name: "UI / UX Design", level: 3 },
+    ],
+  },
+
+  {
+    category: "Backend & Engineering",
+    skills: [
+      { name: "Python", level: 3 },
+      { name: "C# / .NET", level: 2 },
+      { name: "REST API", level: 3 },
+      { name: "SQL & PostgreSQL", level: 2 },
+    ],
+  },
+
+  {
+    category: "AI & Data",
+    skills: [
+      { name: "Generative AI & LLMs", level: 3 },
+      { name: "Machine Learning", level: 2 },
+      { name: "Power BI & Data Analysis", level: 2 },
+      { name: "Prompt Engineering", level: 3 },
+    ],
+  },
+
+  {
+    category: "Tools & Practices",
+    skills: [
+      { name: "Git & GitHub", level: 3 },
+      { name: "Figma", level: 3 },
+      { name: "GitHub Actions & CI/CD", level: 2 },
+      { name: "Agile Development", level: 3 },
+    ],
+  },
+] as SkillGroup[],
 
   experience: [
     
