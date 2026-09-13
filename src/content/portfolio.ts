@@ -193,7 +193,7 @@ deploy(buildExperience("portfolio"));`,
               ],
     },
     {
-      role: "Front-End Developer Intern",
+      role: "Software Developer Intern",
       org: "Side Stream · Copenhagen",
       period: "Sep 2025 — Nov 2025",
       points: [
