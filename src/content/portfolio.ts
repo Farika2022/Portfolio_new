@@ -5,8 +5,6 @@
 // `about.photo` to an imported image path (or keep null for the placeholder).
 // ============================================================================
 import profile from "../assets/profile.jpeg" 
-import weatherapp from "../assets/weather_app.mp4"
-import e_commerce from "../assets/E-commerce.mp4"
 
 
 export type ProjectMedia = {
@@ -16,6 +14,9 @@ export type ProjectMedia = {
 export type Project = {
   title: string;
   description: string;
+  problem?: string;
+  solution?: string;
+  result?: string;
   tags: string[];
   media?: ProjectMedia[];
   link?: string;
@@ -81,65 +82,56 @@ deploy(buildExperience("portfolio"));`,
     ],
   },
 
-  projects: [
-     {
+    projects: [
+    {
       title: "SmartDesk",
-      description:
-        "Full-stack support-ticketing platform with real-time AI-based ticket triage via LLM integration, independently deployed across Vercel, Render, and Neon.",
-      tags: ["React", "TypeScript", "ASP.NET Core", "PostgreSQL", "Docker"],
+      description: "An AI help desk that sorts support tickets automatically.",
+      problem:
+        "Support teams spend 2 to 3 minutes reading and sorting every new ticket, so urgent problems wait behind small questions.",
+      solution:
+        "I designed and shipped a full-stack help desk where AI reads each new ticket and sets its category and priority. I built the React frontend and used AI tools to speed up the .NET backend.",
+      result:
+        "Sorting takes seconds instead of minutes. 15+ automated tests. Live on Vercel, Render and Neon.",
+      tags: ["React", "TypeScript", ".NET", "PostgreSQL", "LLM"],
       link: "https://smartdisk.vercel.app/",
-      repo: "https://github.com/Farika2022/AI-Projects/tree/main/SmartDisk%20app/smartdisk",
+      repo: "https://github.com/Farika2022/smartdesk",
       featured: true,
     },
     {
       title: "Overseas Voyages",
-      description:
-        "A polished travel platform with rich itinerary browsing and a fast, responsive interface. Built and shipped end to end as a software developer, owning timelines and acting as the day-to-day point of contact for B2B clients.",
-      tags: ["React", "JavaScript", "CSS", "HTML"],
+      description: "Live B2B travel platform for a real client.",
+      problem:
+        "A travel company needed a fast, clear website for 100+ international B2B clients, and new features without a big team.",
+      solution:
+        "I owned the frontend: started the site in Lovable to move fast, then built and changed features myself in React. I was the day-to-day contact, turning client requests into features.",
+      result: "10+ features shipped and 20+ issues fixed in 6 months.",
+      tags: ["React", "JavaScript", "CSS", "Client work"],
       link: "https://overseas-voyages.vercel.app/",
       repo: "https://github.com/Farika2022/overseas-voyages",
       featured: true,
     },
     {
-      title: "Generative AI for Public Space Redesign",
-      description:
-        "Multidisciplinary research project at Aalborg University coordinating researchers, designers, and developers. Exploring generative AI to reimagine public spaces, while running planning sessions and tracking milestones across parallel workstreams.",
-      tags: ["Python", "Generative AI", "Machine Learning", "React"],
+      title: "AI Public Space Redesign",
+      description: "MSc thesis: an AI image editor for citizens, built in a team of 3.",
+      problem:
+        "Citizens find it hard to show city planners what they want a street or park to look like.",
+      solution:
+        "We built a web app where people edit photos of public spaces with AI, and tested 4 ways to give input: text, voice, inpainting, and drag-and-drop.",
+      result: "A user study and 4 design recommendations for AI tools in citizen participation.",
+      tags: ["React", "TypeScript", "Generative AI", "User study"],
       repo: "https://github.com/Farika2022/optimizinginput",
     },
     {
       title: "Help the Botanist",
-      description:
-        "A machine-learning project at Aalborg University's Computer Science department. Owned end-to-end coordination from scoping through launch, maintaining quality, timelines, and documentation throughout.",
-      tags: ["Python", "Machine Learning", "Flask"],
+      description: "Machine learning map that predicts where plants grow in Denmark.",
+      problem:
+        "Botanists and conservationists spend a lot of fieldwork time searching for where a plant species is likely to grow.",
+      solution:
+        "We combined plant sightings (GBIF) with soil, temperature and rain data, trained 4 machine learning models, and built a web app that shows a prediction heatmap for any of 300+ species.",
+      result:
+        "Compared 4 models (K-nearest neighbors, Random Forest, Gradient Boosting, Label Propagation). Best model reached about 80% accuracy.",
+      tags: ["Python", "Machine Learning", "Flask", "Data"],
       repo: "https://github.com/Farika2022/Help-the-botanist",
-    },
-    {
-      title: "Weather App",
-      description:
-        "I created a simple Weather App. It display the real-time temperature, wind and humidity of the selected city.",
-      tags: ["HTML", "CSS"] ,
-      repo: "https://github.com/Farika2022/HTML-CSS/tree/main/HTML%26CSS_%20Projects/Weather_App",
-       media: [
-    {
-      type: "video",
-      src: weatherapp,
-    },
-    
-  ]
-    },
-     {
-      title: "E-commerce website ",
-      description:
-        "I created a simple e-commerce website for dress. And I also included simple cart and payment pages to it.",
-      tags: ["HTML", "CSS"],
-      repo: "https://github.com/Farika2022/HTML-CSS/tree/main/HTML%26CSS_%20Projects/E-commerce",
-       media: [
-    {
-      type: "video",
-      src: e_commerce,
-    },
-  ]
     },
   ] as Project[],
 

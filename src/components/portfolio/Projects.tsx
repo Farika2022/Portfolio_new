@@ -19,10 +19,11 @@ export function Projects() {
             {/* CLICK WRAPPER */}
             <div
               onClick={() => {
+                if (!p.media?.length) return;
                 setActiveProject(p);
                 setMediaIndex(0);
               }}
-              className="cursor-pointer"
+              className={p.media?.length ? "cursor-pointer" : ""}
             >
               <SpotlightCard className="h-full">
                 <div className="flex h-full flex-col p-6">
@@ -42,9 +43,28 @@ export function Projects() {
                   </div>
 
                   {/* DESCRIPTION */}
-                  <p className="mb-4 flex-1 text-sm text-muted-foreground">
-                    {p.description}
-                  </p>
+                                    {/* DESCRIPTION + PROBLEM / SOLUTION / RESULT */}
+                  <div className="mb-4 flex-1 space-y-3 text-sm">
+                    <p className="font-medium text-foreground">{p.description}</p>
+                    {p.problem && (
+                      <div>
+                        <p className="font-mono text-[11px] uppercase tracking-wide text-coral">Problem</p>
+                        <p className="text-muted-foreground">{p.problem}</p>
+                      </div>
+                    )}
+                    {p.solution && (
+                      <div>
+                        <p className="font-mono text-[11px] uppercase tracking-wide text-coral">Solution</p>
+                        <p className="text-muted-foreground">{p.solution}</p>
+                      </div>
+                    )}
+                    {p.result && (
+                      <div>
+                        <p className="font-mono text-[11px] uppercase tracking-wide text-teal">Result</p>
+                        <p className="text-foreground">{p.result}</p>
+                      </div>
+                    )}
+                  </div>
 
                   {/* TAGS */}
                   <div className="mb-4 flex flex-wrap gap-2">
