@@ -52,10 +52,8 @@ export const content = {
 
   hero: {
     name: "Farika Farook",
-    headline: "I build interfaces that think and feel.",
-    subline:
-      "MSc Computer Science · Aalborg University. Software developer combining frontend engineering, AI, and Human-Computer Interaction to build thoughtful, user-focused digital experiences.",
-    // The decorative code snippet shown in the hero (your real code).
+    headline: "I build AI-powered web products that users enjoy and businesses can measure.",
+    subline: "I start with the user's problem and the company's goal, then design and ship the full product: React frontend, .NET or Python backend, and the AI in between. MSc Computer Science, Aalborg University.",
     codeSnippet: `function buildExperience(idea) {
   const ui = design(idea, { warmth: true });
   return ui
@@ -66,10 +64,16 @@ export const content = {
 
 // ship it →
 deploy(buildExperience("portfolio"));`,
-    primaryCta: {
-      label: "Get in touch",
-      href: "mailto:farikamagjabeen2022@gmail.com",
+   primaryCta: {
+      label: "Email me",
+      href: "mailto:farikamagjabeen2022@gmail.com?subject=Hi%20Farika%2C%20about%20a%20developer%20role",
     },
+    phoneCta: {
+      label: "Call me",
+      href: "tel:+45 71531692",
+    },
+    proofLine:
+      "Shipped features for Overseas Voyages, Side Stream and Fendous · Built SmartDesk, an AI help desk that sorts tickets in seconds",
     secondaryLinks: [
       { label: "GitHub", href: "https://github.com/Farika2022" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/farika-m-farook-7b57b0311/" },
