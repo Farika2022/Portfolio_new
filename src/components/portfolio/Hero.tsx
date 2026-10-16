@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
-import { ArrowDown, Github, Mail,Linkedin } from "lucide-react";
+import { ArrowDown, Github, Mail,Linkedin ,Phone} from "lucide-react";
 import { content } from "@/content/portfolio";
 import profile from "../../assets/hero.jpg"
 import { TechOrbit } from "./tech";
@@ -129,7 +129,17 @@ export function Hero() {
               <Mail className="h-4 w-4" />
               {hero.primaryCta.label}
             </a>
+            <a
+              href={hero.phoneCta.href}
+              className="inline-flex items-center gap-2 rounded-full border border-coral px-6 py-3 text-sm font-semibold text-coral transition-colors hover:bg-coral hover:text-coral-foreground"
+            >
+              <Phone className="h-4 w-4" />
+              {hero.phoneCta.label}
+            </a>
             </motion.div>
+            <p className="mt-6 max-w-xl text-sm text-muted-foreground">
+            {hero.proofLine}
+          </p>
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
