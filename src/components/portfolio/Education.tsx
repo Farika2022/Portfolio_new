@@ -14,14 +14,8 @@ export function Education() {
               <div>
                 <h3 className="font-semibold">{e.degree}</h3>
                 <p className="text-sm text-muted-foreground">{e.school}</p>
-                <p className="mt-1 font-mono text-xs text-muted-foreground">
-                  {e.period}
-                </p>
-                {e.detail && (
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    {e.detail}
-                  </p>
-                )}
+                <p className="mt-1 font-mono text-xs text-muted-foreground">{e.period}</p>
+                {e.detail && <p className="mt-2 text-sm text-muted-foreground">{e.detail}</p>}
               </div>
             </div>
           </Reveal>

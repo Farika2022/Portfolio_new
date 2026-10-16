@@ -33,7 +33,7 @@ function Index() {
       <Nav />
       <main className="overflow-x-clip">
         <Hero />
-         <About />
+        <About />
         <Projects />
         <TechStack />
         <Experience />
