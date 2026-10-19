@@ -4,8 +4,7 @@
 // just append an object to the `projects` array. To add your photo, set
 // `about.photo` to an imported image path (or keep null for the placeholder).
 // ============================================================================
-import profile from "../assets/profile.jpeg" 
-
+import profile from "../assets/profile.jpeg";
 
 export type ProjectMedia = {
   type: "image" | "video";
@@ -54,7 +53,8 @@ export const content = {
   hero: {
     name: "Farika Farook",
     headline: "I build AI-powered web products that users enjoy and businesses can measure.",
-    subline: "I start with the user's problem and the company's goal, then design and ship the full product: React frontend, .NET or Python backend, and the AI in between. MSc Computer Science, Aalborg University.",
+    subline:
+      "I start with the user's problem and the company's goal, then design and ship the full product: React frontend, .NET or Python backend, and the AI in between. MSc Computer Science, Aalborg University.",
     codeSnippet: `function buildExperience(idea) {
   const ui = design(idea, { warmth: true });
   return ui
@@ -65,7 +65,7 @@ export const content = {
 
 // ship it →
 deploy(buildExperience("portfolio"));`,
-   primaryCta: {
+    primaryCta: {
       label: "Email me",
       href: "mailto:farikamagjabeen2022@gmail.com?subject=Hi%20Farika%2C%20about%20a%20developer%20role",
     },
@@ -82,7 +82,7 @@ deploy(buildExperience("portfolio"));`,
     ],
   },
 
-    projects: [
+  projects: [
     {
       title: "SmartDesk",
       description: "An AI help desk that sorts support tickets automatically.",
@@ -136,49 +136,48 @@ deploy(buildExperience("portfolio"));`,
   ] as Project[],
 
   skills: [
-  {
-    category: "Frontend",
-    skills: [
-      { name: "React & TypeScript", level: 3 },
-      { name: "JavaScript", level: 3 },
-      { name: "HTML & CSS", level: 3 },
-      { name: "UI / UX Design", level: 3 },
-    ],
-  },
+    {
+      category: "Frontend",
+      skills: [
+        { name: "React & TypeScript", level: 3 },
+        { name: "JavaScript", level: 3 },
+        { name: "HTML & CSS", level: 3 },
+        { name: "UI / UX Design", level: 3 },
+      ],
+    },
 
-  {
-    category: "Backend & Engineering",
-    skills: [
-      { name: "Python", level: 3 },
-      { name: "C# / .NET", level: 2 },
-      { name: "REST API", level: 3 },
-      { name: "SQL & PostgreSQL", level: 2 },
-    ],
-  },
+    {
+      category: "Backend & Engineering",
+      skills: [
+        { name: "Python", level: 3 },
+        { name: "C# / .NET", level: 2 },
+        { name: "REST API", level: 3 },
+        { name: "SQL & PostgreSQL", level: 2 },
+      ],
+    },
 
-  {
-    category: "AI & Data",
-    skills: [
-      { name: "Generative AI & LLMs", level: 3 },
-      { name: "Machine Learning", level: 2 },
-      { name: "Power BI & Data Analysis", level: 2 },
-      { name: "Prompt Engineering", level: 3 },
-    ],
-  },
+    {
+      category: "AI & Data",
+      skills: [
+        { name: "Generative AI & LLMs", level: 3 },
+        { name: "Machine Learning", level: 2 },
+        { name: "Power BI & Data Analysis", level: 2 },
+        { name: "Prompt Engineering", level: 3 },
+      ],
+    },
 
-  {
-    category: "Tools & Practices",
-    skills: [
-      { name: "Git & GitHub", level: 3 },
-      { name: "Figma", level: 3 },
-      { name: "GitHub Actions & CI/CD", level: 2 },
-      { name: "Agile Development", level: 3 },
-    ],
-  },
-] as SkillGroup[],
+    {
+      category: "Tools & Practices",
+      skills: [
+        { name: "Git & GitHub", level: 3 },
+        { name: "Figma", level: 3 },
+        { name: "GitHub Actions & CI/CD", level: 2 },
+        { name: "Agile Development", level: 3 },
+      ],
+    },
+  ] as SkillGroup[],
 
   experience: [
-    
     {
       role: "Software Developer",
       org: "Overseas Voyagers",
@@ -186,15 +185,16 @@ deploy(buildExperience("portfolio"));`,
       points: [
         " Own frontend delivery on a live B2B platform serving 100+ international clients across multiple markets, applying component-based architecture, responsive UI, and REST API integration.",
         " Act as day-to-day client contact and translate business needs into shipped features, using AI tools including Claude Code, GitHub Copilot, and Lovable as core working method.",
-              ],
+      ],
     },
     {
       role: "Software Developer Intern",
       org: "Side Stream · Copenhagen",
       period: "Sep 2025 — Nov 2025",
       points: [
-       "Delivered a functional end-to-end frontend for a two-sided B2B marketplace supporting early launch with 5+ initial sellers and buyers, covering role-based signup, seller submission with admin review, product listing, buyer search, quantity and stock updates, and payment flow.",
-       "Applied component-based architecture (Header, Sidebar, Navbar, product cards), responsive design, and hooks including useMemo and useNavigate, integrated with a PostgreSQL backend and resolved integration issues through structured debugging, pull request reviews, and pair discussion with the team."   ],
+        "Delivered a functional end-to-end frontend for a two-sided B2B marketplace supporting early launch with 5+ initial sellers and buyers, covering role-based signup, seller submission with admin review, product listing, buyer search, quantity and stock updates, and payment flow.",
+        "Applied component-based architecture (Header, Sidebar, Navbar, product cards), responsive design, and hooks including useMemo and useNavigate, integrated with a PostgreSQL backend and resolved integration issues through structured debugging, pull request reviews, and pair discussion with the team.",
+      ],
     },
     {
       role: "Tech Consultant Intern",
@@ -202,15 +202,16 @@ deploy(buildExperience("portfolio"));`,
       period: "Jun 2025 — Aug 2025",
       points: [
         "Built and maintained sections of the Fendous.DK website in Danish and English (Help page, e-meet section, Copilot section) and created end-user tutorials through Storylane.",
-        "Contributed to Fendous PLS (Private Learning Space) by researching and prototyping secure inclusion of external participants in Jitsi Meet-based online meetings, applying JavaScript for meeting security features."     ],
+        "Contributed to Fendous PLS (Private Learning Space) by researching and prototyping secure inclusion of external participants in Jitsi Meet-based online meetings, applying JavaScript for meeting security features.",
+      ],
     },
     {
       role: "Student Coordinator (Student Assistant)",
       org: "Aalborg University — Computer Science Dept.",
       period: "Oct 2024 — August 2026",
       points: [
-         "Communicate technical concepts clearly across international students, faculty, and administration",
-         "Reduced repeated queries by around 30% for 50+ international students through structured guidance and documentation"  
+        "Communicate technical concepts clearly across international students, faculty, and administration",
+        "Reduced repeated queries by around 30% for 50+ international students through structured guidance and documentation",
       ],
     },
   ] as ExperienceItem[],
@@ -222,10 +223,9 @@ deploy(buildExperience("portfolio"));`,
     paragraphs: [
       "I'm Farika — a software developer and MSc Computer Science graduate from Aalborg University. I enjoy building digital products where technology, AI, and user experience come together.",
 
-     "I like taking an idea from understanding the problem and exploring solutions to designing, building, and refining the final experience. My background spans React, TypeScript, Python, C#/.NET, AI-powered applications, and Human-Computer Interaction.",
+      "I like taking an idea from understanding the problem and exploring solutions to designing, building, and refining the final experience. My background spans React, TypeScript, Python, C#/.NET, AI-powered applications, and Human-Computer Interaction.",
 
-     "I'm currently open to software development and frontend engineering opportunities. If you're working on something interesting, let's talk."
-,
+      "I'm currently open to software development and frontend engineering opportunities. If you're working on something interesting, let's talk.",
     ],
   },
 
@@ -253,16 +253,15 @@ deploy(buildExperience("portfolio"));`,
 
   contact: {
     heading: "Let's build something.",
-    blurb:
-      "Reach me out through.",
+    blurb: "Reach me out through.",
     email: "farikamagjabeen2022@gmail.com",
     links: [
       { label: "GitHub", href: "https://github.com/Farika2022" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/farika-m-farook-7b57b0311/" },
-     // {
-     //   label: "Overseas Voyagers",
-     //   href: "https://overseas-voyages.vercel.app/",
-   //   },
+      // {
+      //   label: "Overseas Voyagers",
+      //   href: "https://overseas-voyages.vercel.app/",
+      //   },
     ],
   },
 

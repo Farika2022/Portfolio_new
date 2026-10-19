@@ -46,9 +46,7 @@ export function Footer() {
                 <span className="text-coral">{typed.split("\n")[1]}</span>
               </>
             )}
-            <span className="ml-0.5 inline-block w-2 animate-pulse bg-foreground/70">
-              &nbsp;
-            </span>
+            <span className="ml-0.5 inline-block w-2 animate-pulse bg-foreground/70">&nbsp;</span>
           </pre>
         </div>
 
