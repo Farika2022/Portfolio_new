@@ -23,12 +23,9 @@ export function Experience() {
                 <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-background bg-coral shadow-[0_0_0_4px_color-mix(in_oklab,var(--coral)_20%,transparent)]" />
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="text-base font-semibold">
-                    {item.role}{" "}
-                    <span className="text-muted-foreground">· {item.org}</span>
+                    {item.role} <span className="text-muted-foreground">· {item.org}</span>
                   </h3>
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {item.period}
-                  </span>
+                  <span className="font-mono text-xs text-muted-foreground">{item.period}</span>
                 </div>
                 <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground">
                   {item.points.map((pt) => (

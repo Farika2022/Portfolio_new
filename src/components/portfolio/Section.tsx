@@ -17,9 +17,7 @@ export function Section({
       <Reveal>
         <div className="mb-10 flex items-baseline gap-3">
           <span className="font-mono text-sm text-coral">{index}</span>
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            {title}
-          </h2>
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{title}</h2>
           <span className="h-px flex-1 bg-border" />
         </div>
       </Reveal>

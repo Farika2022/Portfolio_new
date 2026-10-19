@@ -10,9 +10,7 @@ export function TechStack() {
         {content.skills.map((group, gi) => (
           <Reveal key={group.category} delay={gi * 0.08}>
             <div className="h-full rounded-xl border border-border bg-card/50 p-6">
-              <h3 className="mb-4 font-mono text-sm text-amber">
-                {group.category}
-              </h3>
+              <h3 className="mb-4 font-mono text-sm text-amber">{group.category}</h3>
               <ul className="space-y-3">
                 {group.skills.map((s, si) => (
                   <li key={s.name}>
@@ -32,9 +30,7 @@ export function TechStack() {
                               damping: 18,
                             }}
                             className={`h-2 w-2 rounded-full ${
-                              d <= s.level
-                                ? "bg-coral"
-                                : "bg-muted-foreground/25"
+                              d <= s.level ? "bg-coral" : "bg-muted-foreground/25"
                             }`}
                           />
                         ))}
