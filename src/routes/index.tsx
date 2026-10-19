@@ -31,9 +31,10 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <ThemeProvider>
+      
       <CustomCursor />
       <Nav />
-      <Analytics />
+     
       <main className="overflow-x-clip">
         <Hero />
          <About />
@@ -45,6 +46,7 @@ function Index() {
         <Contact />
       </main>
       <Footer />
+       <Analytics />
     </ThemeProvider>
     
   );
