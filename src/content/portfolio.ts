@@ -297,18 +297,14 @@ testimonials: [
     },
   ] as EducationItem[],
 
-  contact: {
-    heading: "Let's build something.",
+ contact: {
+    heading: "Hiring a full stack or AI product developer?",
     blurb:
-      "Reach me out through.",
+      "I'm open to full stack, frontend, AI product engineer and junior AI engineer roles in Denmark and Europe. Call or email me, and I'll reply within one working day.",
     email: "farikamagjabeen2022@gmail.com",
     links: [
       { label: "GitHub", href: "https://github.com/Farika2022" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/farika-m-farook-7b57b0311/" },
-     // {
-     //   label: "Overseas Voyagers",
-     //   href: "https://overseas-voyages.vercel.app/",
-   //   },
     ],
   },
 
