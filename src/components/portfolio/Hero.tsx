@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
-import { ArrowDown, Github, Mail,Linkedin ,Phone} from "lucide-react";
+import { ArrowDown, Github, Mail, Linkedin, Phone } from "lucide-react";
 import { content } from "@/content/portfolio";
-import profile from "../../assets/hero.jpg"
+import profile from "../../assets/hero.jpg";
 import { TechOrbit } from "./tech";
 function useTypewriter(text: string, speed = 38, enabled = true) {
   const [out, setOut] = useState(enabled ? "" : text);
@@ -36,8 +36,11 @@ export function Hero() {
   const rafRef = useRef(0);
 
   const N = 5;
-  const CX = 210, CY = 340, R = 190;
-  const START_DEG = 210, END_DEG = 330;
+  const CX = 210,
+    CY = 340,
+    R = 190;
+  const START_DEG = 210,
+    END_DEG = 330;
   const SWAP_INTERVAL = 2200;
 
   useEffect(() => {
@@ -53,11 +56,11 @@ export function Hero() {
         if (!node) return;
         const spread = (END_DEG - START_DEG) / (N - 1);
         const baseDeg = START_DEG + i * spread;
-        const rad = (baseDeg + angleRef.current * (180 / Math.PI)) * Math.PI / 180;
+        const rad = ((baseDeg + angleRef.current * (180 / Math.PI)) * Math.PI) / 180;
         const x = CX + R * Math.cos(rad);
         const y = CY + R * Math.sin(rad);
         node.style.left = `${x}px`;
-        node.style.top  = `${y}px`;
+        node.style.top = `${y}px`;
       });
 
       rafRef.current = requestAnimationFrame(frame);
@@ -78,8 +81,7 @@ export function Hero() {
         style={{ background: "var(--coral)" }}
       />
       <div className="mx-auto grid w-full max-w-5xl gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-       
-           <div className="min-w-0">
+        <div className="min-w-0">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -98,7 +100,7 @@ export function Hero() {
           </p>
 
           <h1 className="text-balance break-words text-3xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl">
-                        {typed}
+            {typed}
             <span
               className={`ml-1 inline-block w-[3px] translate-y-1 bg-coral align-middle ${
                 done ? "animate-pulse" : ""
@@ -121,7 +123,7 @@ export function Hero() {
             transition={{ delay: 0.75, duration: 0.5 }}
             className="mt-8 flex flex-wrap items-center gap-4"
           >
-           <a
+            <a
               href={hero.primaryCta.href}
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-coral px-6 py-3 text-sm font-semibold text-coral-foreground transition-transform hover:scale-[1.03]"
             >
@@ -136,17 +138,14 @@ export function Hero() {
               <Phone className="h-4 w-4" />
               {hero.phoneCta.label}
             </a>
-            </motion.div>
-            <p className="mt-6 max-w-xl text-sm text-muted-foreground">
-            {hero.proofLine}
-          </p>
+          </motion.div>
+          <p className="mt-6 max-w-xl text-sm text-muted-foreground">{hero.proofLine}</p>
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.75, duration: 0.5 }}
             className="mt-8 flex flex-wrap items-center gap-4"
           >
-            
             <a
               href={content.github.url}
               target="_blank"
@@ -169,7 +168,7 @@ export function Hero() {
         </div>
 
         {/* Decorative code snippet */}
-       {/* <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.96, y: 16 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -188,15 +187,9 @@ export function Hero() {
           </pre>
         </motion.div>*/}
         {/* RIGHT SIDE (CHARACTER AREA) */}
- 
-  <TechOrbit/>
- 
-    
-      
+
+        <TechOrbit />
       </div>
-
-     
-
     </section>
   );
 }
