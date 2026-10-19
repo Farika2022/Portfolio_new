@@ -29,6 +29,13 @@ export type SkillGroup = {
   skills: { name: string; level: 1 | 2 | 3 }[]; // 1 = learning, 2 = solid, 3 = strong
 };
 
+export type Testimonial={
+  quote: string;
+  name: string;
+  role: string;
+  company: string;
+  link?: string;
+}
 export type ExperienceItem = {
   role: string;
   org: string;
@@ -111,6 +118,20 @@ deploy(buildExperience("portfolio"));`,
       featured: true,
     },
     {
+      title: "Guess the Spot",
+      description: "A 3D geography game: spin the globe, pick a landmark, answer before the timer runs out.",
+      problem:
+        "Learning geography from lists and maps is boring, so people forget it fast.",
+      solution:
+        "I built a 3D globe game with 20 world landmarks and two modes (quick quiz and photo jigsaw). Photos load live from Wikipedia, and the game never repeats the same question or fact twice in a row.",
+      result:
+        "Live and playable in the browser. I solved real data problems, like Wikipedia photos that were logos or over 12,000 px wide.",
+      tags: ["React", "TypeScript", "Three.js", "Tailwind", "API"],
+      link: "https://guesswith.vercel.app",
+      repo: "https://github.com/Farika2022/AI-Projects/tree/main/Guess%20the%20spot/guess-the-spot",
+    },
+    
+    {
       title: "AI Public Space Redesign",
       description: "MSc thesis: an AI image editor for citizens, built in a team of 3.",
       problem:
@@ -176,7 +197,32 @@ deploy(buildExperience("portfolio"));`,
     ],
   },
 ] as SkillGroup[],
-
+testimonials: [
+    {
+      quote:
+        "She was quick to understand what was needed and did a solid job turning designs and ideas into working interfaces. I highly recommend her to anyone seeking a junior front-end developer.",
+      name: "Elias Mo Brøndum Gad",
+      role: "Managed Farika directly",
+      company: "Sidestream",
+      link: "https://www.linkedin.com/in/elias-mo-br%C3%B8ndum-gad-98207011a/",
+    },
+    {
+      quote:
+        "Despite being an intern, Farika demonstrated a professional level of creativity, problem-solving, and technical expertise. She translated complex requirements into intuitive designs that elevated the overall user experience.",
+      name: "Arunima Srivastava Martinsen",
+      role: "Founder & CEO",
+      company: "Fendous Sustainable Solutions",
+    },
+    {
+      quote:
+        "She takes initiative, has great ideas, and is skilled at speaking to and teaching larger groups of students. It has truly been a success to have Farika on the team and as the primary developer of the strategy!",
+      name: "Lars Dalsgaard Vinther Schmidt",
+      role: "Managed Farika directly",
+      company: "Aalborg University, Computer Science",
+      link: "https://www.linkedin.com/in/larsvintherschmidt/",
+    },
+  ] as Testimonial[],
+  
   experience: [
     
     {

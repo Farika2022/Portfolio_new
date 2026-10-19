@@ -4,6 +4,7 @@ import { CustomCursor } from "@/components/portfolio/CustomCursor";
 import { Nav } from "@/components/portfolio/Nav";
 import { Hero } from "@/components/portfolio/Hero";
 import { Projects } from "@/components/portfolio/Projects";
+import { Testimonials } from "@/components/portfolio/Testimonials";
 import { TechStack } from "@/components/portfolio/TechStack";
 import { Experience } from "@/components/portfolio/Experience";
 import { About } from "@/components/portfolio/About";
@@ -11,6 +12,7 @@ import { Education } from "@/components/portfolio/Education";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 import { content } from "@/content/portfolio";
+import { Analytics } from "@vercel/analytics/next"
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,10 +33,12 @@ function Index() {
     <ThemeProvider>
       <CustomCursor />
       <Nav />
+      <Analytics/>
       <main className="overflow-x-clip">
         <Hero />
          <About />
         <Projects />
+        <Testimonials />
         <TechStack />
         <Experience />
         <Education />
@@ -42,5 +46,6 @@ function Index() {
       </main>
       <Footer />
     </ThemeProvider>
+    
   );
 }
