@@ -12,7 +12,7 @@ import { Education } from "@/components/portfolio/Education";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 import { content } from "@/content/portfolio";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,10 +33,10 @@ function Index() {
     <ThemeProvider>
       <CustomCursor />
       <Nav />
-      <Analytics/>
+      <Analytics />
       <main className="overflow-x-clip">
         <Hero />
-         <About />
+        <About />
         <Projects />
         <Testimonials />
         <TechStack />
@@ -46,6 +46,5 @@ function Index() {
       </main>
       <Footer />
     </ThemeProvider>
-    
   );
 }
