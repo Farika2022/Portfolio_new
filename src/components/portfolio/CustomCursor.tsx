@@ -18,9 +18,7 @@ export function CustomCursor() {
     const move = (e: MouseEvent) => {
       setPos({ x: e.clientX, y: e.clientY });
       const target = e.target as HTMLElement;
-      setHovering(
-        !!target.closest('a, button, [role="button"], input, textarea, .cursor-hover'),
-      );
+      setHovering(!!target.closest('a, button, [role="button"], input, textarea, .cursor-hover'));
     };
     window.addEventListener("mousemove", move);
     return () => {

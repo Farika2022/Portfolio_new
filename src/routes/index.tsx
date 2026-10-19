@@ -13,7 +13,6 @@ import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 import { content } from "@/content/portfolio";
 
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -31,13 +30,12 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <ThemeProvider>
-      
       <CustomCursor />
       <Nav />
-     
+
       <main className="overflow-x-clip">
         <Hero />
-         <About />
+        <About />
         <Projects />
         <Testimonials />
         <TechStack />
@@ -46,8 +44,6 @@ function Index() {
         <Contact />
       </main>
       <Footer />
-      
     </ThemeProvider>
-    
   );
 }
