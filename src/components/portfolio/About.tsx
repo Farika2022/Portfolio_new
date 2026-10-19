@@ -44,9 +44,7 @@ export function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-8">
-              <p className="mb-3 font-mono text-xs text-muted-foreground">
-                ~/ contributions
-              </p>
+              <p className="mb-3 font-mono text-xs text-muted-foreground">~/ contributions</p>
               <ContributionGraph />
             </div>
           </Reveal>
