@@ -32,17 +32,13 @@ export function Nav() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        
         scrolled || open
           ? "border-b border-border bg-background/80 backdrop-blur-md"
           : "border-b border-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3.5">
-        <a
-          href="#top"
-          className="font-mono text-sm font-semibold tracking-tight"
-        >
+        <a href="#top" className="font-mono text-sm font-semibold tracking-tight">
           <span className="text-coral">~/</span>
           {content.hero.name.toLowerCase()}
         </a>
@@ -57,7 +53,7 @@ export function Nav() {
             </a>
           ))}
         </div>
-         <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1.5">
           <ThemeToggle />
           <button
             type="button"
@@ -90,5 +86,5 @@ export function Nav() {
         </div>
       </div>
     </header>
-        );
+  );
 }

@@ -9,12 +9,8 @@ export function Contact() {
     <Section id="contact" index="06" title="Contact">
       <Reveal>
         <div className="rounded-2xl border border-border bg-card/50 p-8 text-center sm:p-12">
-          <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            {contact.heading}
-          </h3>
-          <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground">
-            {contact.blurb}
-          </p>
+          <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">{contact.heading}</h3>
+          <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground">{contact.blurb}</p>
           <a
             href={`mailto:${contact.email}`}
             className="group mt-6 inline-flex items-center gap-2 overflow-hidden rounded-full bg-coral px-7 py-3.5 text-sm font-semibold text-coral-foreground transition-transform hover:scale-[1.03]"
