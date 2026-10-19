@@ -227,7 +227,7 @@ testimonials: [
     
     {
       role: "Software Developer",
-      org: "Overseas Voyagers",
+      org: "Overseas Voyagers · Singapore",
       period: "Feb 2026 — August 2026",
       points: [
         " Own frontend delivery on a live B2B platform serving 100+ international clients across multiple markets, applying component-based architecture, responsive UI, and REST API integration.",
@@ -252,7 +252,7 @@ testimonials: [
     },
     {
       role: "Student Coordinator (Student Assistant)",
-      org: "Aalborg University — Computer Science Dept.",
+      org: "Aalborg University (Computer Science Dept) · Aalborg",
       period: "Oct 2024 — August 2026",
       points: [
          "Communicate technical concepts clearly across international students, faculty, and administration",
@@ -266,11 +266,11 @@ testimonials: [
     photo: profile,
     heading: "About me",
     paragraphs: [
-      "I'm Farika — a software developer and MSc Computer Science graduate from Aalborg University. I enjoy building digital products where technology, AI, and user experience come together.",
+     "I'm Farika, a developer and MSc Computer Science graduate from Aalborg University. I build web products with React and TypeScript, and add AI where it truly helps the user.",
 
-     "I like taking an idea from understanding the problem and exploring solutions to designing, building, and refining the final experience. My background spans React, TypeScript, Python, C#/.NET, AI-powered applications, and Human-Computer Interaction.",
+      "What makes me different: I start with people, not code. At Overseas Voyages I was the day-to-day contact for B2B clients and turned their requests into shipped features. At Aalborg University I led onboarding for international students. I like understanding what a business and its users need, then building it.",
 
-     "I'm currently open to software development and frontend engineering opportunities. If you're working on something interesting, let's talk."
+      "I'm looking for full stack, frontend and AI product roles in Denmark and Europe, where I can learn fast from a strong team and give 100%.",
 ,
     ],
   },
