@@ -36,7 +36,7 @@ function Index() {
       <Analytics />
       <main className="overflow-x-clip">
         <Hero />
-         <About />
+        <About />
         <Projects />
         <Testimonials />
         <TechStack />
@@ -46,6 +46,5 @@ function Index() {
       </main>
       <Footer />
     </ThemeProvider>
-    
   );
 }
