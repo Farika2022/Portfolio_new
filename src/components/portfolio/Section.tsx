@@ -16,13 +16,9 @@ export function Section({
     <section id={id} className="mx-auto max-w-5xl scroll-mt-20 px-5 py-20">
       <Reveal>
         <div className="mb-10 flex items-baseline gap-3">
-          {index &&(
-            <span className="font-mono text-sm text-coral">{index}</span>
-          )}
-          
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            {title}
-          </h2>
+          {index && <span className="font-mono text-sm text-coral">{index}</span>}
+
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{title}</h2>
           <span className="h-px flex-1 bg-border" />
         </div>
       </Reveal>
