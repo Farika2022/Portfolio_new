@@ -80,7 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Farika Farook | Full Stack & AI Product Developer" },
-      { name: "description", content: "Full stack and AI product developer in Copenhagen. React, TypeScript, .NET and Python." },
+      { name: "description", content: "Full stack and AI product developer in Copenhagen. React, TypeScript, .NET and Python, with LLM pipelines, RAG and AI help desks." },
       { name: "author", content: "Farika Farook" },
       { property: "og:type", content: "website" },
     ],

@@ -53,15 +53,15 @@ export type EducationItem = {
 export const content = {
   meta: {
     name: "Farika Farook",
-    title: "Farika Farook — Software Developer & Frontend Engineer",
+    title: "Farika Farook — Full Stack & AI Product Developer",
     description:
-      "MSc Computer Science graduate from Aalborg University. Software developer building AI-powered, user-focused web experiences with React, TypeScript, Python, and C#/.NET. Graduated August 2026.",
+      "Full stack and AI product developer, MSc Computer Science from Aalborg University (2026). I build web products with React, TypeScript, Python and .NET, including LLM pipelines, RAG chatbots and AI help desks.",
   },
 
   hero: {
     name: "Farika Farook",
     headline: "I build AI-powered web products that users enjoy and businesses can measure.",
-    subline: "I start with the user's problem and the company's goal, then design and ship the full product: React frontend, .NET or Python backend, and the AI in between. MSc Computer Science, Aalborg University.",
+    subline: "I start with the user's problem and the company's goal, then design and ship the full product: React frontend, .NET or Python backend, and the AI in between: LLM pipelines, RAG and speech. MSc Computer Science, Aalborg University.",
     codeSnippet: `function buildExperience(idea) {
   const ui = design(idea, { warmth: true });
   return ui
@@ -81,7 +81,7 @@ deploy(buildExperience("portfolio"));`,
       href: "tel:+45 71531692",
     },
     proofLine:
-      "Shipped features for Overseas Voyages, Side Stream and Fendous · Built SmartDesk, an AI help desk that sorts tickets in seconds",
+      "Shipped features for Overseas Voyages, Side Stream and Fendous · Built SmartDesk (AI ticket sorting), an AI job-match agent and a RAG document chatbot",
     secondaryLinks: [
       { label: "GitHub", href: "https://github.com/Farika2022" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/farika-m-farook-7b57b0311/" },
@@ -98,7 +98,7 @@ deploy(buildExperience("portfolio"));`,
       solution:
         "I designed and shipped a full-stack help desk where AI reads each new ticket and sets its category and priority. I built the React frontend and used AI tools to speed up the .NET backend.",
       result:
-        "Sorting takes seconds instead of minutes. 15+ automated tests. Live on Vercel, Render and Neon.",
+        "Sorting takes seconds instead of minutes. 15+ automated tests. Live on Vercel, Railway and Neon.",
       tags: ["React", "TypeScript", ".NET", "PostgreSQL", "LLM"],
       link: "https://smartdisk.vercel.app/",
       repo: "https://github.com/Farika2022/smartdesk",
@@ -116,6 +116,30 @@ deploy(buildExperience("portfolio"));`,
       link: "https://overseas-voyages.vercel.app/",
       repo: "https://github.com/Farika2022/overseas-voyages",
       featured: true,
+    },
+    {
+      title: "AI Job Agent",
+      description: "Upload a resume and a job post, and get a match score, skill gaps and interview questions.",
+      problem:
+        "Job seekers can't easily tell how well their resume fits a role, or which gaps to work on before they apply.",
+      solution:
+        "I built a 3-step LLM pipeline: one step builds a profile from the resume PDF, one pulls the requirements out of the job post, and one compares them. Every AI answer is checked against Pydantic schemas, and the AI is told never to invent experience.",
+      result:
+        "A 0–100% match score (required skills count more than preferred ones), matching and missing skills, 3 tips to close the gaps, and 5 interview questions for the role.",
+      tags: ["Python", "LLM", "Groq", "Pydantic", "Streamlit"],
+      repo: "https://github.com/Farika2022/AI-Projects/tree/main/job_agent",
+    },
+    {
+      title: "RAG Chatbot",
+      description: "Chat with your own PDF. Answers come only from what the document says.",
+      problem:
+        "General AI chatbots make things up when you ask about a specific document they have never seen.",
+      solution:
+        "I built a retrieval-augmented generation (RAG) app: the PDF is split into overlapping chunks, turned into embeddings and stored in a FAISS index. For each question, the 3 most relevant chunks are sent to Llama 3.3 70B on Groq together with the question.",
+      result:
+        "Answers are grounded in the document, and the bot says when the answer isn't there instead of guessing. Chat-style UI with message history.",
+      tags: ["Python", "RAG", "FAISS", "Embeddings", "LLM"],
+      repo: "https://github.com/Farika2022/AI-Projects/tree/main/RAG%20chatbot",
     },
     {
       title: "Guess the Spot",
@@ -143,6 +167,18 @@ deploy(buildExperience("portfolio"));`,
       repo: "https://github.com/Farika2022/optimizinginput",
     },
     {
+      title: "Voice Assistant",
+      description: "Ask a question out loud and hear the AI answer back.",
+      problem:
+        "Typing isn't always practical, and voice demos often break on silence, short clips or API errors.",
+      solution:
+        "I chained speech-to-text (Whisper on Groq), an LLM answer, and text-to-speech (gTTS) in one app, with handling for empty or silent recordings, Whisper 'hearing' words in silence, rate limits, bad API keys and lost connections.",
+      result:
+        "A full voice-in, voice-out loop in the browser. If speech output fails, the text answer is still shown.",
+      tags: ["Python", "Whisper", "LLM", "Speech", "Streamlit"],
+      repo: "https://github.com/Farika2022/AI-Projects/tree/main/Voice%20assistant",
+    },
+    {
       title: "Help the Botanist",
       description: "Machine learning map that predicts where plants grow in Denmark.",
       problem:
@@ -153,6 +189,14 @@ deploy(buildExperience("portfolio"));`,
         "Compared 4 models (K-nearest neighbors, Random Forest, Gradient Boosting, Label Propagation). Best model reached about 80% accuracy.",
       tags: ["Python", "Machine Learning", "Flask", "Data"],
       repo: "https://github.com/Farika2022/Help-the-botanist",
+    },
+    {
+      title: "AI Mini-Projects",
+      description: "4 small apps I built to learn the core AI building blocks.",
+      solution:
+        "Feedback Analyzer: sorts customer reviews (one at a time or a whole CSV) into positive and negative with DistilBERT. Image Classifier: top 3 guesses for a photo with a Vision Transformer. Document Summarizer: splits long PDFs into chunks and summarizes them with DistilBART. Local Chatbot: LangChain with a model running on my own computer through Ollama.",
+      tags: ["Python", "Hugging Face", "LangChain", "Ollama", "Streamlit"],
+      repo: "https://github.com/Farika2022/AI-Projects",
     },
   ] as Project[],
 
@@ -174,6 +218,7 @@ deploy(buildExperience("portfolio"));`,
       { name: "C# / .NET", level: 2 },
       { name: "REST API", level: 3 },
       { name: "SQL & PostgreSQL", level: 2 },
+      { name: "Streamlit", level: 2 },
     ],
   },
 
@@ -181,9 +226,13 @@ deploy(buildExperience("portfolio"));`,
     category: "AI & Data",
     skills: [
       { name: "Generative AI & LLMs", level: 3 },
+      { name: "LLM APIs & Structured Output (Groq, Pydantic)", level: 3 },
+      { name: "Prompt Engineering", level: 3 },
+      { name: "RAG & Vector Search (FAISS, embeddings)", level: 2 },
+      { name: "Hugging Face Transformers", level: 2 },
+      { name: "LangChain", level: 2 },
       { name: "Machine Learning", level: 2 },
       { name: "Power BI & Data Analysis", level: 2 },
-      { name: "Prompt Engineering", level: 3 },
     ],
   },
 
@@ -227,7 +276,7 @@ testimonials: [
     
     {
       role: "Software Developer",
-      org: "Overseas Voyagers · Singapore",
+      org: "Overseas Voyagers · Singapore (Remote)",
       period: "Feb 2026 — August 2026",
       points: [
         " Own frontend delivery on a live B2B platform serving 100+ international clients across multiple markets, applying component-based architecture, responsive UI, and REST API integration.",
@@ -266,12 +315,11 @@ testimonials: [
     photo: profile,
     heading: "About me",
     paragraphs: [
-     "I'm Farika, a developer and MSc Computer Science graduate from Aalborg University. I build web products with React and TypeScript, and add AI where it truly helps the user.",
+     "I'm Farika, a developer and MSc Computer Science graduate from Aalborg University. I build web products with React and TypeScript, and add AI where it truly helps the user. Outside client work I build AI tools end to end: an agent that matches a resume to a job, a chatbot that answers only from your own PDF, and a voice assistant you can talk to.",
 
       "What makes me different: I start with people, not code. At Overseas Voyages I was the day-to-day contact for B2B clients and turned their requests into shipped features. At Aalborg University I led onboarding for international students. I like understanding what a business and its users need, then building it.",
 
       "I'm looking for full stack, frontend and AI product roles in Denmark and Europe, where I can learn fast from a strong team and give 100%.",
-,
     ],
   },
 
